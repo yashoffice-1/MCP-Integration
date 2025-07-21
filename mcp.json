@@ -1,0 +1,16 @@
+{
+  "mcpVersion": "1.0",
+  "inputFields": {
+    "prompt": {
+      "type": "text",
+      "label": "Ask ChatGPT"
+    }
+  },
+  "outputFields": {
+    "response": {
+      "type": "text",
+      "label": "GPT's Response"
+    }
+  },
+  "outputText": "{response}"
+} 
