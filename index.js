@@ -8,7 +8,7 @@ const { Configuration, OpenAIApi } = require('openai');
 dotenv.config();
 
 const app = express();
-const port = 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
@@ -52,6 +52,6 @@ app.post('/mcp', async (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`MCP server running on port ${port}`);
-}); 
+app.listen(PORT, () => {
+  console.log(`MCP server running on port ${PORT}`);
+});
